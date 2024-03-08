@@ -1,7 +1,17 @@
 ﻿Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 
-for (int i = 0; i < 5; i++)
+int[] arr = new[] { 1, 2, 3, 4, 5 };
+
+Console.WriteLine(GetAvg(arr));
+
+static double GetAvg(int[] arr)
 {
-    Console.Write(i + " ");
+    int sum = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        sum += arr[i];
+    }
+
+    return (double) sum / arr.Length;
 }
