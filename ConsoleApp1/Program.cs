@@ -9,9 +9,9 @@ Console.WriteLine(GetMax(arr));
 static double GetAvg(int[] arr)
 {
     int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
+    foreach (var num in arr)
     {
-        sum += arr[i];
+        sum += num;
     }
 
     return (double) sum / arr.Length;
